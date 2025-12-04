@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import url("font.css");
+@import url("reset.css");
+
+body{font-family: 'Pretendard', sans-serif;}
+.bold{font-weight:600;}
+.fz20{font-size: 20px;}
+.fz18{font-size: 18px;}
+.fz15{font-size: 15px;}
+.gnb_here{border-bottom: 1px solid #4689E1;}
+
+
+header{width: 1920px; height: 100px; display: flex; align-items: center; margin: 0 auto;}
+header .logo_set{display: flex; width: 685px; height: 48px; background:#4689E1; justify-content: end; margin-right: 143px;}
+header .logo_name a{font-size: 40px; font-family: 'HsJandari'; color: white; margin-left: 6px; margin-right: 50px;}
+header .gnb{display: flex; align-items: center; font-size: 20px;}
+header .gnb_li{position: relative;}
+header .gnb_li > a{display: inline-block; padding: 31px; transition: 0.5s;}
+
+header .gnb:hover .lnb{height: 250px;}
+/* header .gnb_li:hover .lnb{height: 250px;} 21행 수정전 */
+header .gnb_li:hover a{color: #4689E1; }
+header .gnb_li .lnb li:hover > a{transition: 0.3s; color:#4689E1}
+header .gnb_li:hover .lnb a{ color: #333; transition: 0.2s;}
+
+header .gnb_li .lnb{position: absolute; width: 100%; background: rgba(255,255,255,0.7); height: 0; overflow: hidden; transition: 0.3s; z-index: 2;}   
+header .gnb .lnb > li > a{display: flex; width: 100%; height: 50px; align-items: center; justify-content: center; color: #333; 
+transition: 0.3s; padding: 5px 10px;}
+
+
+
+
+
+footer{height: 340px; width: 1920px; background: #4689E1;  margin: 0 auto; margin-top: 125px;
+display: flex; align-items: center;  justify-content: center; flex-direction: column;}
+.footer img{width: 134px; height: 134px;}
+.footer_content{color: #fff; font-size: 13px; margin-top: 30px; text-align: center; line-height: 16px;}

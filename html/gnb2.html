@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인사말</title>
+    <link rel="stylesheet" href="../css/gnb1-2.css">
+</head>
+<body>
+      <header>
+        <div class="logo_set">
+            <h2 class="logo"><a href="index.html"><img src="../img/white_logo.png" alt=""></a></h2>
+            <div class="logo_name"><a href="index.html">언더워터다이브</a></div>
+        </div>
+
+        <ul class="gnb">
+            <li class="gnb_li"><a href="gnb1-1.html">언더워터 다이브</a>
+                <ul class="lnb">
+                    <li><a href="gnb1-1.html" class="select_innerlnb">인사말</a></li>
+                    <li><a href="gnb1-2.html">강사진</a></li>
+                    <li><a href="gnb1-3.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="gnb_li">
+                <a href="gnb2.html" class="gnb_here">EVENT</a>
+                <ul class="lnb"><li></li></ul>
+            </li>
+            <li class="gnb_li"><a href="gnb3-1.html">교육안내</a>
+                <ul class="lnb">
+                    <li><a href="gnb3-1.html">추구하는 교육</a></li>
+                    <li><a href="gnb3-2.html">원데이 클래스</a></li>              
+                    <li><a href="gnb3-3.html">패키지 클래스</a></li>
+                    <li><a href="gnb3-4.html">자격증 클래스</a></li>
+                </ul>
+            </li>
+            <li class="gnb_li">
+                <a href="gnb4.html">해외해양실습</a>
+                <ul class="lnb"><li></li></ul>
+            </li>
+            <li class="gnb_li">
+                <a href="gnb5.html">커뮤니티</a>
+                <ul class="lnb"><li></li></ul>
+            </li>
+        </ul>
+        </header>
+
+        
+        <div class="contentbox2">
+            <div class="gnb2_contenttitle bold">EVENT</div>
+            <div class="gnb2_contentset">
+
+                <div class="gnb2_content">
+                      <img src="../img/event/1A3.png" alt="">
+                      
+                      <div class="gnb2_textset ti10">
+                        <div class="title fz20">교육생 최대 배출기념 할인 행사</div>
+                        <div class="duration">2025.07.01 ~ 2025.09.30</div>
+                        <img src="../img/Vector_after.png" alt="" class="bul_before1"> <!-- 여기가  버튼!! -->
+                        <div class="hide1">
+                            <div class="price">오픈워터 올인원 교육 <span class="v_bd"></span> 390,000</div>
+                            <div class="price">오픈+어드밴스 올인원 교육 <span class="v_bd"></span> 700,000</div>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="gnb2_content">
+                    <img src="../img/event/2.png" alt="">
+                      
+                    <div class="gnb2_textset ti10">
+                        <div class="title fz20">스페셜티 패키지 할인</div>
+                        <div class="duration">2025.07.01 ~ 2025.09.30</div>
+                        <img src="../img/Vector_after.png" alt="" class="bul_before2">    <!-- 여기가  버튼!! -->
+                      <div class="hide2">
+                            <div class="priceset">
+                                <div class="price_title mb10">패키지 A <span class="v_bd"></span> 600,000</div>
+                                <div class="price_desc">트림자세_수영장 3회</div>
+                                <div class="price_desc">앉아서 유영_수영장2회</div>
+                            </div>
+                            <div class="priceset">
+                                <div class="price_title mb10">패키지 B <span class="v_bd"></span> 900,000</div>
+                                <div class="price_desc">초정밀 중성부력_수영장2회</div>
+                                <div class="price_desc">컴퓨터 트레이닝_수영장1회</div>
+                                <div class="price_desc">초정밀 입출수 어라운드_수영장2회</div>
+                            </div>
+                      </div>
+                       
+                    </div>
+                </div>
+
+                <div class="gnb2_content">
+                      <img src="../img/event/1A3.png" alt="">
+                      
+                      <div class="gnb2_textset ti10">
+                        <div class="title fz20">교육생 최대 배출기념 할인 행사</div>
+                        <div class="duration">2025.07.01 ~ 2025.09.30</div>
+                        <img src="../img/Vector_after.png" alt="" class="bul_before3">    <!-- 여기가  버튼!! -->
+                        <div class="hide3">
+                            <div class="price">오픈워터 올인원 교육 <span></span> 390,000</div>
+                            <div class="price">오픈+어드밴스 올인원 교육 <span></span> 700,000</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+         <script>
+            $('.bul_before1').click(function(){
+                $('.hide1').toggleClass('hideoff')
+                
+            })
+         </script>
+           <script>
+            $('.bul_before2').click(function(){
+                $('.hide2').toggleClass('hideoff')
+                
+            })
+         </script>
+        
+          <script>
+            $('.bul_before3').click(function(){
+                $('.hide3').toggleClass('hideoff')
+                
+            })
+         </script>
+        
+        <!-- 위에처럼 같은 구조의 클래스를 각각 해도 가능하지만 한번에도 할 수있다고 하심 하지만 뇌과부화로 이번에는 안 배우고 넘어옴ㅎㅎ -->
+        <!-- function() 에서 괄호안에 아무값이나 집어넣어도 됨
+         약간 form에서 정보받는 공간지정하는 것과 유사 -->
+
+
+        <footer>
+        <img src="../img/white_logo.png" alt="">
+        <div class="footer_content">
+            언더워터다이브 | 이형진 | 서울시 송파구 새말로 105, 401호 <br> 사업자등록번호 : 211-09-56785 | 이메일 : sagabug@naver.com <br> 신고하기 
+        </div>
+            
+    </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url("font.css");
+@import url("reset.css");
+
+@import url("divingheaderfooter.css");
+
+body{font-family: 'Pretendard', sans-serif;}
+.bold{font-weight:600;}
+
+
+
+.visual{margin: 0 auto; width: 1920px; position: relative;}
+/* .visual .textbox{position: absolute; top: 25%; left: 42%;}   */
+.visual .textbox .subtext{font-size: 25px; color: #fff; letter-spacing: 15px; position: absolute; top: 20%; left: 35%;}  
+.visual .textbox .visualtitle{font-size: 70px; font-family: 'HsJandari'; color: #fff; position: absolute; top: 25%; left: 42%;}
+
+               
+/* 자주묻는질문 부분 */
+section{margin: 0 auto; width: 1215px; display: flex; flex-direction: column; align-items: center; margin-top: 80px;}
+section > h3{font-size: 50px; }
+.section1_title2{margin: 40px 0 50px; font-size: 25px;}
+.section_bdcontent{font-size: 20px; font-weight: lighter; width: 1196px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #4689E1; border-bottom: 1px solid #44779D; padding: 25px 0;}
+section .bul1{display: inline-block; width: 5px; height: 5px; background: #44779D; border-radius: 5px;}
+
+.section1_imgbox{width: 1215px; margin: 53px 0 70px; display: flex; justify-content: space-between;}
+/* width를 안주니까 다닥다닥 붙어서 justift-content:space-between;줘도 안바뀌고 imgbox의 second child에 마진줘도 변화없었음 */
+.section1_imgbox img{width: 383px; height: 371px;}
+/* .section1_imgbox img:nth-child(2){margin:0 26px;} */
+
+.section1_imgbox .desc{font-size: 15px; color: #828282; margin: 27px 0 5px;}
+.section1_imgbox span{font-size: 20px;}
+.section1_imgbox .v_line{display: inline-block; border-left: 1px solid #000; height: 17px; margin:0 20px;  }
+
+
+section .parent{position: relative; }
+.section2_position{position: absolute; top:0; 
+display: flex; flex-direction: column; justify-content: center; align-items: center; top:15%; left:16%;} 
+.section2_position h3{font-size: 50px; color: #fff; }
+.section2_title2{font-size: 25px; color: #fff; font-weight: lighter; margin: 40px 0 62px; }   
+
+.section2_innerboxset{position: relative;}
+.innerbox_contentposition{position: absolute;  width: 995px;
+top: 100px; left: 137px;}
+.innerbox_title{display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;}
+.innerbox_title span:first-child{font-size: 30px;}
+.innerbox_title span:nth-child{font-size: 20px;}
+
+.line{ margin: 30px 0; display: flex; justify-content: space-between; font-size: 18px;}
+
+.map_box{position: relative;}
+.map_box > img{width: 1253px; height: 600px;}  /* 박스의 그라데이션이 20px*2(좌우/상하)인데 그거까지 포함돼 크기가 정해져서 너비 높이 다 40px 씩 더한 값임 */
+.lr_align{display: flex;
+    position: absolute;
+    top: 35px;}
+.lr_align .map_position{width: 890px; height: 480px; margin:25px 26px 25px 50px;}
+.mapbox_content{padding-top: 20px;}
+.mapbox_content > img {height: 100px;}
+.map_box .info_title{height: 41px; background: #C3D3DE; color: #5C6D78; line-height: 41px; padding-left: 11px; font-size: 20px; margin: 18px 5px 10px; }
+.w98{width: 98px;} 
+.w125{width: 125px;}
+.w153{width: 153px;}
+/* 왼쪽패딩11픽셀때문에 상자크기 늘어나서 원래 가로수치-11픽셀한 값 부여함 */
+
+.map_box .info_content{margin-left: 5px; font-size: 18px;}
+

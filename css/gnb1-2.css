@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url(font.css);
+@import url(reset.css);
+@import url(divingheaderfooter.css);  /* 본문글씨체, gnb현재위치 글씨볼드/크기 들어있음 */
+
+.mb10{margin-bottom: 10px;}
+.ti10{text-indent: 10px;}
+
+.contentbox { margin: 145px auto 0; width: 1920px; height: 893px; position: relative;}
+/* .contentbox > img{width: 100%;}   /* 여기가 문제2 부모자식관계포함하니 위치이상해짐  html은 gnb1-1 임 */ 
+.contentbox > img.innerlnb_box{width: 100%;}   /* 바꿔서 이상해진부분 */
+
+.inner_lnb{display: flex; gap: 170px; position: absolute; top:19.5%; left: 37%;}
+.inner_lnb > li > a{color: #fff; padding:12px 32px; border-top: 1px solid #fff; transition: 0.3s;}
+
+
+ .inner_lnb > li > a.select_innerlnb{color: #4689E1; background: url(../img/class/dropshdowbox.png); } 
+
+
+
+.content1-1{width: 922px; font-size: 20px; position: absolute; top: 30%; left: 28.8%;}
+
+
+/* 강사진 */
+.content1-2{display: flex; gap: 200px;
+    position: absolute; top: 30%; left: 36%;}
+.content1-2 .teacher ul{font-size: 20px; margin-top: 20px;}
+.content1-2 .teacher li{font-size: 18px; margin-top: 3px;}
+.content1-2 .teacher li:first-child{margin-top: 12px;}
+
+
+/* 오시는길 */
+.content1-3{width: 922px; font-size: 20px; position: absolute; top: 26.5%; left: 28%;
+display: flex;}
+
+.content1-3 .map1-3_content{font-size: 20px; position: absolute; top: 45%; left:62%;}
+.map1-3_content2{margin: 18px 0;}
+.margin_L25{margin-left: 25px;}
+.margin_L98{margin-left: 98px;}
+.map1-3_content2-3{display: inline-block; margin-top: 5px;}
+
+
+/* event */
+.contentbox2{width: 1860px; margin: 0 auto;}
+.contentbox2 .gnb2_contentset{display: flex; justify-content: space-between;}
+.gnb2_contenttitle{margin:117px 0 100px;}
+.gnb2_content > img{width: 600px; height: 400px;}
+.gnb2_textset{margin-top: 15px; font-size: 15px; position: relative; height: 280px;}
+/* 높이 안 줬더니 2번째 이벤트 내용만 많아서 혼자 길이가 기니까 absolute하려고 할때 기준이 되는 이 textset의 크기가 달라 똑같은 %값을 주면 다른위치에 해당되길래 가장 긴 길이로 그냥 높이를 부여해버림 */
+.gnb2_textset > .duration{color:#777; padding: 12px 0 5px 0; width: 300px; border-bottom:1px solid #000; margin-bottom: 15px;}
+.gnb2_textset .hide > .price{margin-bottom: 10px;}
+
+.gnb2_textset .priceset{margin-bottom: 34px;}
+.gnb2_textset .priceset > .price_desc{margin-bottom: 5px; color: #777}
+
+
+.v_bd{border-right: 1px solid #000; height: 10px;  display: inline-block; margin: 0 5px ;}
+.gnb2_textset > .bul_before1, .bul_before2, .bul_before3 {padding: 15px; position: absolute; top: 19%; left: 45%; transition: 0.3s;} 
+
+
+/* 
+.gnb2_textset > .hide{height:0; overflow: hidden; transition: 0.3s;}
+.gnb2_textset .bul_before:hover + .hide{height: 210px; transition: 0.3s;}
+.gnb2_textset .bul_before:hover{transform: rotate(180deg); transition: 0.3s;}
+ 문제3 bul 한번 누르면 다시 누를때까지 내용보이게 하고 싶은데 몰라서 일단 hover로 함 */
+
+ .hide1, .hide2, .hide3{height: 0; transition: 0.3s; overflow: hidden;}
+ .hideoff{height: 300px; transition: 0.3s;}   /* bul 클릭하면 뜨고 다시 누르면 안보이는데 3개가 동시에 작용함
+ > 그래서 이름을 각각 줌ㅎㅎ */

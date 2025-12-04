@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+@import url(divingheaderfooter.css);
+
+
+/* gnb3의 공통 부분 */
+section{margin: 0 auto; width: 1920px; margin-top: 113px; }
+section ul.inner_lnb{display: flex; gap:241px; justify-content: center; margin-bottom: 10px;}
+.inner_lnb > li > a{color: #777;}
+
+.inner_lnb > li.select_innerlnb a{color: #000;}
+/* 처음에 a태그에 select_innerlnb 걸었는데 선생님께서 li에 거는 걸 추천해주심! 기억하기!! 그리고 reset에서 a에 글자색상 걸었었기 때문에  li 뒤에 a까지 적어야 함!! */
+
+
+/* gnb3-2.html */
+.desc_char3{padding-right: 16px;}
+
+section .gnb3-2_content{display: flex; gap: 35px; justify-content: center; margin: 100px 0 150px ;}  /* content 영역-innerlnb,footer와의 간격설정 */
+.onedayclass img{width: 700px; height: 500px;}
+
+.textset_titleset{display: flex; justify-content: space-between; font-size: 20px; width: 604px; align-items: center;}
+.gnb3-2_content .textset_titleset{display: flex; justify-content: space-between; font-size: 20px; width: 700px;}
+
+.textset_title{margin: 19px 0 19px 6px; font-size: 20px;}
+
+.textset_titleset div:nth-child(2){font-size: 15px; color: #777; margin: 0 10px 0 0;}
+.textset_titleset span.v_bd{border-right: 1px solid #333; font-size: 16px; margin: 0 10px;}
+
+.desc_set .desc_title{margin:0 45px 0 15px;}
+.desc_set .desc_line{margin-bottom: 14px; display: flex; flex-wrap: wrap;}  /* 타이틀 밑 설명의 한 줄 세트 */
+.desc_set .desc_line:last-child{margin-bottom: 30px; }
+
+.desc_set .desc_desc{width: 470px; display: inline-block;}
+/* 내용이 길어 두줄이 되면 타이틀 밑쪽으로 들어가길래 width 주고 부모인 desc_line에 flex를 줌 > 그랬더니 원데이클래스부분이 이상해져서 수정하고 거기는 이미지랑 공간이 더 넓은데 너비를 470으로 한정했더니 원래 한줄이었던 부분이 두줄되길래 35행으로 원데이클래스페이지만 너비를 550줌 */
+.onedayclass .gnb3-2_textset .textset_desc .desc_line > .desc_desc{width: 550px;}
+
+.add_infoset .add_info{display: flex; font-size: 15px; margin-bottom: 15px; margin-left: 15px;}
+.add_info .add_title1{margin-right:17px;}
+.add_info .add_title2{margin-right:103px;}
+.consult{margin-left: 15px; font-size: 13px; color: #777;}
+
+
+
+/* gnb3-3.html */
+.gnb3-3_content > .packageclass > img{width: 603px;}
+.gnb3-3_content{width: 1920px; margin: 100px auto 150px; display: flex; justify-content: center; gap: 30px;} /* 내용부분 큰 위치 */
+
+
+
+
+/* gnb3-4.html  선생님께서 수정봐주심-집에서 복습하기!!*/
+.gnb3-4_content > .licenseclass > img{width: 603px;}
+/* width"100%로 변경해주셨는데 이미지 너비가 달라져서 세부내용토글/소요시간멘트부분이 위치가 달라져서 다음에 이미지를 div로 감싸고 너비100%하기로... */
+.gnb3-4_content > .licenseclass{display: flex; flex-direction: column;}   
+
+
+.gnb3-4_content{width: 1920px; margin: 100px auto 150px; display: flex; justify-content: center; gap: 30px;
+} /* 내용부분 큰 위치 */
+.gnb3-4_content .gnb3-4_textset {display: flex; flex-direction: column; 
+/* width: 603px; */ flex-grow: 1;
+position: relative;}  /* 토글 위치잡으려고 포지션줌 */
+.gnb3-4_content .gnb3-4_textset .desc_set{display: flex; flex-direction: column; height: 100%; }
+.gnb3-4_content .gnb3-4_textset .textset_desc {flex-grow: 1; width: 603px;}
+
+.desc_ex{font-size: 13px; width: 430px; display: inline-block;  margin: 16px 0 0 123px; line-height: 20px;}
+
+/* 토글사용대상 */
+.desc_detail {margin-bottom:0; width: 568px; padding-bottom: 30px; background: #F4F4F4; display: flex; flex-direction: column; margin-top: 63px; flex-grow: 1; display: none;}
+/* 가운데 내용이 제일 많은데 가운데 박스가 제일작음.. */
+.desc_detail > span{margin:15px 0 15px 29px; display: inline-block; font-size: 20px;}  
+.desc_detail >p{margin-left: 29px; width: 511px;}
+.desc_detail > .subtitle{font-size: 18px; margin: 0 0 6px 29px; display:block;}
+.desc_detail p:last-child{margin-top: 9px;}
+.pt19{padding-top: 19px;}
+
+/* 토글 */
+.licenseclass > .gnb3-4_textset > .textset_titleset > div.class_togglec{background:#f4f4f4; color: #000; font-size: 18px; padding: 4px 6px; cursor: pointer;}
+.licenseclass > .gnb3-4_textset > .textset_titleset > div.class_toggleo{background:#4689E1; color: #fff; font-size: 18px; padding: 4px 6px;
+position: absolute; top: 16px; right: 9px; cursor: pointer;}
